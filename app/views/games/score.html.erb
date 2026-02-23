@@ -1,0 +1,9 @@
+<h1>Result</h1>
+
+
+<% if @grid_presence && @api_response["found"]  %>
+<%= "Congratulations! #{@word} is a valid English word" %>
+<% else %>
+<%= "Sorry but #{@word} doesn't seem to be an English word" %>
+<% end %>
+<%= link_to "Play again", new_path %>
